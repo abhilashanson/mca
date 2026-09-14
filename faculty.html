@@ -1,0 +1,171 @@
+<html>
+<head>
+<title>Faculty Details</title>
+<style>
+  :root {
+    --primary-color: #1f2937;
+    --secondary-color: #3b82f6;
+    --white: #ffffff;
+  }
+
+  body {
+  background-image: url('oip.png');
+   background-repeat: no-repeat;
+   background-position: center;
+  }
+
+  nav {
+    background-color: var(--primary-color); 
+    display: flex;         
+    gap: 50px;                 
+    padding: 10px 20px;       
+    align-items: center;
+  }
+
+  nav a {
+    color: var(--white);            
+    text-decoration: none;   
+    font-size: 20px;         
+    font-weight: 500;
+    padding: 8px 12px;       
+    border-radius: 4px;        
+  }
+
+  h1 {
+    color: var(--primary-color);
+  }
+
+  .container {
+    max-width: 1000px;
+    margin: 1rem auto;
+    padding: 0 1.5rem;
+  }
+
+  .section-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-color);
+    font-size: 2rem;
+    position: relative;
+  }
+
+
+  .faculty-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+  }
+  
+  .faculty-card {
+    background: var(--white);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .faculty-img-container {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+    background-color: #e2e8f0;
+    position: relative;
+  }
+
+  .faculty-img-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+  }
+
+  .faculty-info {
+    padding: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .faculty-name {
+    font-size: 1.25rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.3rem;
+  }
+
+  .faculty-designation {
+    font-size: 0.95rem;
+    color: var(--secondary-color);
+    font-weight: 500;
+    margin-bottom: 0.8rem;
+  }
+</style>
+</head>
+<body>
+<center><h1>Faculty Details</h1></center>
+<nav>
+  <a href="home.html">Home</a>
+</nav>
+
+<div class="container">
+    <h2 class="section-title">Meet Our Faculty</h2>
+    
+    <div class="faculty-grid">
+            <div class="faculty-card">
+            <div class="faculty-img-container">
+                <img src="sreeja.jpg" alt="sreeja">
+            </div>
+            <div class="faculty-info">
+                <h3 class="faculty-name">Sreeja K</h3>
+                <p class="faculty-designation">Associate Professor & HOD</p>
+            </div>
+        </div>
+
+        <div class="faculty-card">
+            <div class="faculty-img-container">
+                <img src="sujitha.png" alt="sujitha">
+            </div>
+            <div class="faculty-info">
+                <h3 class="faculty-name">R Sujitha</h3>
+                <p class="faculty-designation">Assistant Professor</p>
+            </div>
+        </div>
+	<div class="faculty-card">
+            <div class="faculty-img-container">
+                <img src="rekha.jpg" alt="rekha">
+            </div>
+            <div class="faculty-info">
+                <h3 class="faculty-name">Rehka M Pillai</h3>
+                <p class="faculty-designation">Associate Professor</p>
+
+            </div>
+        </div>
+	<div class="faculty-card">
+            <div class="faculty-img-container">
+                <img src="jeeja.jpg" alt="jeeja">
+            </div>
+            <div class="faculty-info">
+                <h3 class="faculty-name">Jeeja G S</h3>
+                <p class="faculty-designation">Associate Professor</p>
+
+            </div>
+        </div>
+	<div class="faculty-card">
+            <div class="faculty-img-container">
+                <img src="adhithya.jpg" alt="adhithiya">
+            </div>
+            <div class="faculty-info">
+                <h3 class="faculty-name">Adhithya J V</h3>
+                <p class="faculty-designation">Assistant Professor</p>
+              
+
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+</body>
+</html>
